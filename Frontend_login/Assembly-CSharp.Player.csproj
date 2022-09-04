@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{D5E57A61-36C0-80F4-A0A0-0DFB0330C20D}</ProjectGuid>
+    <ProjectGuid>{18D52104-83E8-8CE5-4E34-299F393950C5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -60,6 +60,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
     <Compile Include="Assets\Script\Login.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
+    <Compile Include="Assets\Script\LoginResponse.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
@@ -70,6 +71,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
     <Compile Include="Assets\Script\GameAccount.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Script\CreateResponse.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
@@ -693,39 +695,39 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.Timeline.Player.csproj">
-      <Project>{504D5228-93DA-E136-C5ED-FD549BF12903}</Project>
+      <Project>{F0CBEE2D-2124-9CC7-9163-79A66FB660E4}</Project>
       <Name>Unity.Timeline.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.Player.csproj">
-      <Project>{F36FD399-B802-8555-7CE1-B7CE3C7E7D92}</Project>
+      <Project>{40BBAA4A-4732-FCF0-DF6B-EE840A592B08}</Project>
       <Name>Unity.TextMeshPro.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Flow.Player.csproj">
-      <Project>{42079486-251F-98B2-2F99-AB4AD337E5B4}</Project>
+      <Project>{C5C05D35-1396-651B-41C9-2BA78C036EB9}</Project>
       <Name>Unity.VisualScripting.Flow.Player</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.Player.csproj">
-      <Project>{A972182A-C0F9-12D4-493C-0F52728C4AAB}</Project>
+      <Project>{6EA66CFB-42C1-E325-A782-96329C891E22}</Project>
       <Name>UnityEngine.UI.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Services.Core.Player.csproj">
-      <Project>{9EA8C769-7501-3746-E83D-F60C0FE9C62B}</Project>
+      <Project>{58C8260D-049D-F584-6E48-0944CA95D28F}</Project>
       <Name>Unity.Services.Core.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Core.Player.csproj">
-      <Project>{5B2F53A1-B3B3-04D5-CF9B-8DC5036D1DA6}</Project>
+      <Project>{F7036032-0237-FEEB-C8FB-CAA45F2E0495}</Project>
       <Name>Unity.VisualScripting.Core.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Services.Core.Analytics.Player.csproj">
-      <Project>{9806F125-9328-B732-74BB-9CDCFC19545E}</Project>
+      <Project>{ABCE25DA-9CA3-13B4-2F82-71E4A592B246}</Project>
       <Name>Unity.Services.Core.Analytics.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Services.Core.Environments.Player.csproj">
-      <Project>{241141BC-46BF-2F4F-5B2F-FD086CE71C1F}</Project>
+      <Project>{0448B104-1B87-62B0-C33B-E5EE76FCF34C}</Project>
       <Name>Unity.Services.Core.Environments.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.State.Player.csproj">
-      <Project>{DE7BF4A9-05A2-4F21-D454-EB7E4E3BC0F0}</Project>
+      <Project>{FA5AFD68-C508-2BBE-76C9-038EB4F56083}</Project>
       <Name>Unity.VisualScripting.State.Player</Name>
     </ProjectReference>
   </ItemGroup>

@@ -4,11 +4,53 @@ const Account=mongoose.model('accounts');
 module.exports=app => {
 
     //Routes
-    app.get('/account', async (req, res) => {
-    
-        const { rUsername, rPassword }= req.query;
+    app.post('/account/login', async (req, res) => {
+
+        var response= {} ;
+
+        const { rUsername, rPassword }= req.body;
         if(rUsername==null || rPassword==null){
-            res.send("Invalid crededential");
+            response.code=1;
+            response.msg="Invalid crededential"
+            res.send(response);
+            return;
+        }
+    
+        var userAccount= await Account.findOne({username:rUsername});
+        if(userAccount != null){
+            if(rPassword == userAccount.password){
+                userAccount.lastAuthentication=Date.now();
+                await userAccount.save();
+
+                response.code=0;
+                response.msg="Account found";
+                response.data= userAccount;
+                res.send(response);
+
+                console.log("Retriving account...")
+                res.send(userAccount);
+
+                return;
+            }
+        }
+
+        response.code=1;
+        response.msg="Invalid crededential";
+        res.send(response);
+        return;
+
+
+    });
+
+    app.post('/account/create', async (req, res) => {
+
+        var response= {} ;
+
+        const { rUsername, rPassword }= req.body;
+        if(rUsername==null || rPassword==null){
+            response.code=1;
+            response.msg="Invalid crededential"
+            res.send(response);
             return;
         }
     
@@ -24,20 +66,17 @@ module.exports=app => {
             });
             await newAccount.save();
 
-            res.send(newAccount);
+            response.code=0;
+            response.msg="Account found";
+            response.data= userAccount;
+            res.send(response);
             return;
         } else{
-            if(rPassword == userAccount.password){
-                userAccount.lastAuthentication=Date.now();
-                await userAccount.save();
-
-                console.log("Retriving account...")
-                res.send(userAccount);
-                return;
-            }
+            response.code=2;
+            response.msg="Username is already taken"
+            res.send(response);
         }
 
-        res.send("Invalid credential");
         return;
 
 
