@@ -7,8 +7,8 @@ using UnityEngine.UI;
 
 public class Login : MonoBehaviour
 {
-    [SerializeField] private string LoginEndpoint = "http://127.0.0.1:13756/account/login";
-    [SerializeField] private string CreateEndpoint = "http://127.0.0.1:13756/account/create";
+    [SerializeField] private string LoginEndpoint = "http://127.0.0.1:70707/account/login";
+    [SerializeField] private string CreateEndpoint = "http://127.0.0.1:70707/account/create";
 
     [SerializeField] private TextMeshProUGUI alertText;
     [SerializeField] private Button loginButton;

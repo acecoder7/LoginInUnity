@@ -1384,8 +1384,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b29c8e3d097297e4898d554933355ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LoginEndpoint: http://127.0.0.1:13756/account/login
-  CreateEndpoint: http://127.0.0.1:13756/account/create
+  LoginEndpoint: http://127.0.0.1:70707/account/login
+  CreateEndpoint: http://127.0.0.1:70707/account/create
   alertText: {fileID: 865941668}
   loginButton: {fileID: 349056338}
   createButton: {fileID: 1267622624}
